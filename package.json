@@ -1,0 +1,26 @@
+{
+    "name": "node_shop",
+    "vsersion": "0.0.1",
+    "description": "flutter女装商城",
+    "scripts": {
+        "start": "node app.js",
+        "test": "mocha -r intelli-espower-loader -t 20000 test",
+        "precommit": "lint-staged"
+    },
+    "lint-staged": {
+        "*.js": [
+            "prettier-write",
+            "git add"
+        ]
+    },
+    "keywords": [
+        "node",
+        "shop"
+    ],
+    "author": "Crazy",
+    "license": "MIT",
+    "dependencies": {
+        "express": "^4.17.1",
+        "request": "^2.88.2"
+    }
+}
