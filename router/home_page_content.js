@@ -85,22 +85,38 @@ router.get("/", (req, res) => {
             "floor": [{
                     "image": base_url + "floor/floor1.jpg",
                     "goodsId": "001",
+                    "title": "美味的煲仔饭",
+                    "score": 1.3,
+                    "sale":2000
+
                 },
                 {
                     "image": base_url + "floor/floor2.jpg",
                     "goodsId": "002",
+                    "title": "网红猪肚鸡仔饭",
+                    "score": 3.5,
+                    "sale":1030
                 },
                 {
                     "image": base_url + "floor/floor3.jpg",
                     "goodsId": "003",
+                    "title": "香辣、麻辣、蒜蓉小龙虾",
+                    "score": 2,
+                    "sale":1467
                 },
                 {
                     "image": base_url + "floor/floor4.jpg",
                     "goodsId": "004",
+                    "title": "肥嘟嘟招牌，三鲜粉",
+                    "score": 5,
+                    "sale":2236
                 },
                 {
                     "image": base_url + "floor/floor5.webp",
                     "goodsId": "005",
+                    "title": "肥嘟嘟招牌，沙虫鲜粉",
+                    "score": 3.8,
+                    "sale":835
                 }
             ],
 
