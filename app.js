@@ -17,7 +17,10 @@ app.use("/getTestData", require("./router/test")) // 测试的接口
 app.use("/getHomePageContent", require("./router/home_page_content")) // 首页接口
 app.use("/getBanner", require("./router/bannar")) // 首页轮播图
 app.use("/getLogin", require("./router/login")) // 登录接口
-app.use("/postlogin_pwd", require("./router/login_pwd")) // 登录接口
+app.use("/postLogin_pwd", require("./router/login_pwd")) // 登录接口
+app.use("/getSendCode", require("./router/sendcode")) // 登录接口
+
+app.use("/getMsite",require("./router/Msite"))//首页
 
 const port = process.env.PORT || 3000;
 

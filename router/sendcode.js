@@ -14,21 +14,15 @@ router.get("/", (req, res) => {
 
     var data = {
         "code": "0",
-        "message": "登录成功",
-        "data": {
-            "token": "12345grthythregwsgwefqwedqwd3efw3fw32",
-            "name": "嘟嘟",
-            "phone": "18611111111",
-            "headImage": base_url + 'banner1.webp',
-        }
+        "message": "成功",
     };
 
     var data1 = {
-        "code": "400",
-        "message": "账号或者密码错误",
+        "code": "1",
+        "message": "短信验证码发送失败",
     };
 
-    if ((phone == 18611111111 || phone == "18611111111") && (code == 123456 || code == "123456")) {
+    if (phone == 18611111111 || phone == "18611111111") {
         res.send(data);
     } else {
         res.send(data1);
